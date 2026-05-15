@@ -6,6 +6,7 @@ var len = [
             document.getElementById(5),
             document.getElementById(6),
             document.getElementById(7),
+            document.getElementById(8),
                                         ]
 
 for (let i = 0; i < len.length; i++) {
