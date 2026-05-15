@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MP Alimentos</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#1f7a3d;
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      max-width:700px;
+      margin:auto;
+    }
+
+    nav{
+      background:#14552a;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd166;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      padding:50px 0;
+    }
+
+    section{
+      margin-bottom:60px;
+    }
+
+    h2{
+      color:#1f7a3d;
+      margin-bottom:20px;
+      font-size:2rem;
+      border-left:6px solid #1f7a3d;
+      padding-left:10px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom:20px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .service-box{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .service-box:hover{
+      transform:translateY(-5px);
+    }
+
+    .cta{
+      background:#1f7a3d;
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      border-radius:15px;
+    }
+
+    .cta h3{
+      font-size:2rem;
+      margin-bottom:15px;
+    }
+
+    .cta button{
+      margin-top:20px;
+      padding:15px 30px;
+      border:none;
+      border-radius:10px;
+      background:#ffd166;
+      color:#333;
+      font-size:1rem;
+      cursor:pointer;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .cta button:hover{
+      background:#ffbf3f;
+    }
+
+    footer{
+      background:#14552a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    .extras ul{
+      padding-left:20px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MP Alimentos</h1>
+    <p>
+      Conectando qualidade à sua mesa, com confiança em cada entrega.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+
+      <div class="card">
+        <p>
+          <strong>Jefferson Araujo Flaresso Junior</strong>, natural de Rio do Sul - SC,
+          atua no segmento alimentício com experiência em vendas e representação.
+        </p>
+
+        <br>
+
+        <p>
+          Obteve uma boa experiência como representante pela Tirol,
+          desenvolvendo habilidades profissionais no atendimento de uma grande
+          demanda de clientes, entendendo suas necessidades e buscando sempre
+          cumprir as metas estabelecidas.
+        </p>
+
+        <br>
+
+        <p>
+          <strong>Especialidades:</strong>
+          persuasão, negociação, vendas e pontualidade.
+        </p>
+
+        <p>
+          <strong>Diferencial:</strong>
+          entender a necessidade de cada cliente.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+
+      <div class="services">
+
+        <div class="service-box">
+          <h3>Vendas</h3>
+          <p>
+            Atendimento personalizado para oferecer os melhores produtos alimentícios.
+          </p>
+
+          <br>
+
+          <strong>Benefício:</strong>
+          mais qualidade e confiança para o seu negócio.
+        </div>
+
+        <div class="service-box">
+          <h3>Promotoria</h3>
+          <p>
+            Organização e promoção de produtos para aumentar resultados e visibilidade.
+          </p>
+
+          <br>
+
+          <strong>Benefício:</strong>
+          maior destaque e valorização dos produtos.
+        </div>
+
+      </div>
+    </section>
+
+    <section class="extras">
+      <h2>Informações Extras</h2>
+
+      <div class="card">
+        <ul>
+          <li>Pagamento via boleto, cartão, dinheiro ou PIX</li>
+          <li>Atendimento de segunda a segunda</li>
+          <li>Atendimento rápido e condições especiais</li>
+          <li>Compromisso com qualidade e confiança</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3>Peça seu orçamento sem compromisso</h3>
+
+      <p>
+        Leve mais qualidade ao seu negócio agora mesmo.
+      </p>
+
+      <button onclick="entrarContato()">
+        Falar no WhatsApp
+      </button>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <div class="card contact">
+
+        <p>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/5549984253056" target="_blank">
+            49 98425-3056
+          </a>
+        </p>
+
+        <p>
+          <strong>E-mail:</strong>
+          Jeffersonflaresso@gmail.com
+        </p>
+
+        <p>
+          <strong>Localização:</strong>
+          Balneário Camboriú - SC
+        </p>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>
+      © 2026 MP Alimentos - Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script>
+    function entrarContato(){
+      window.open(
+        "https://wa.me/5549984253056?text=Olá,%20gostaria%20de%20um%20orçamento!",
+        "_blank"
+      );
+    }
+  </script>
+
+</body>
+</html>
