@@ -5,9 +5,10 @@ strong#langua{color: yellow;font-size:2vw;}
 select#opcoes{font-size:1.5vw;color: black;outline:none}
 option{color:black}
 
-#body{display:flex;justify-content: center;}
+#body{display: flex;flex-direction: column;align-content: center;justify-content: center;flex-wrap: wrap;}
 #card{margin: 4vw 0vw 4vw 0vw;width: 69vw;border: 1vw solid #4f024f;background-color: purple;}
 #title{display:flex;}
+#contato{display:flex;justify-content: center;background-color: black;width: 100%;}
 
 div#açaí{width: 100%;padding: 1vw;}
 div#logo{display: flex;font-size: 5vw;align-items: center;position: relative;right: 6vw;}

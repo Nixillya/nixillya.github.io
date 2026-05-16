@@ -2,42 +2,42 @@ function EXIT() {
     window.close()
 }
 function LOAD() {
-    // Obter todas as cookies como uma string
-var cookies = document.cookie;
+        // Obter todas as cookies como uma string
+    var cookies = document.cookie;
 
-// Dividir a string de cookies em pares chave=valor
-var arrayCookies = cookies.split(';');
+    // Dividir a string de cookies em pares chave=valor
+    var arrayCookies = cookies.split(';');
 
-// Procurar o cookie desejado ("dados" neste caso)
-var cookieDados = null;
-for (var i = 0; i < arrayCookies.length; i++) {
-    var cookie = arrayCookies[i].trim();
-    if (cookie.indexOf('dados=') === 0) {
-        cookieDados = cookie;
-        break;
-    } else {
-        alert('ERRO TERMINAL')
+    // Procurar o cookie desejado ("dados" neste caso)
+    var cookieDados = null;
+    for (var i = 0; i < arrayCookies.length; i++) {
+        var cookie = arrayCookies[i].trim();
+        if (cookie.indexOf('dados=') === 0) {
+            cookieDados = cookie;
+            break;
+        } else {
+            alert('ERRO TERMINAL')
+        }
     }
-}
 
-// Obter o valor do cookie "dados"
-var valorDados = null;
-if (cookieDados) {
-    valorDados = decodeURIComponent(cookieDados.split('=')[1]);
-}
+    // Obter o valor do cookie "dados"
+    var valorDados = null;
+    if (cookieDados) {
+        valorDados = decodeURIComponent(cookieDados.split('=')[1]);
+    }
 
-// Converter a string JSON de volta para um objeto
-var dadosUsuario = JSON.parse(valorDados);
-nome = dadosUsuario.nome
-nivel = dadosUsuario.nivel
-hpx = dadosUsuario.hpx
-hppmin = dadosUsuario.hppmin
-atk = dadosUsuario.atk
-atkp = dadosUsuario.atkp
-defe = dadosUsuario.defe
-crit = dadosUsuario.crit
-deva = dadosUsuario.deva
-GAME()
+    // Converter a string JSON de volta para um objeto
+    var dadosUsuario = JSON.parse(valorDados);
+    nome = dadosUsuario.nome
+    nivel = dadosUsuario.nivel
+    hpx = dadosUsuario.hpx
+    hppmin = dadosUsuario.hppmin
+    atk = dadosUsuario.atk
+    atkp = dadosUsuario.atkp
+    defe = dadosUsuario.defe
+    crit = dadosUsuario.crit
+    deva = dadosUsuario.deva
+    GAME()
 }
 function START(){
     document.getElementById('start').style.display = 'block'

@@ -47,7 +47,7 @@ function selecionarChaveAPI() {
 
 function Aleatorio() {
   const caracteres = document.getElementById("typetermo").value.trim();
-  const comprimentoTermo = Math.floor(Math.random() * document.getElementById("sizetermo").value.trim()) + 1;
+  const comprimentoTermo = document.getElementById("sizetermo").value.trim()
   let termoGerado = "";
 
   for (let i = 0; i < comprimentoTermo; i++) {
